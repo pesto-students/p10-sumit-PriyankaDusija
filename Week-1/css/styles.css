@@ -1,0 +1,115 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.selectedAlbum {
+    background-color: rgb(69, 69, 69);
+    padding: 10px;
+    padding-left: 4%;
+    height: 20vh;
+    width: 100vw;
+}
+
+.albumImage {
+    float: left;
+}
+
+.albumDetails {}
+
+img {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+}
+
+.songsList {
+    height: 50vh;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    color: rgb(249, 249, 249);
+}
+
+h5 {
+    font-family: 'Lato', sans-serif;
+    color: rgb(249, 249, 249);
+}
+
+
+
+.albumButton h6{
+    font-family: 'Lato', sans-serif;
+    color: rgb(249, 249, 249);
+
+}
+
+.albumButton {
+    color: rgb(249, 249, 249);
+    padding-bottom: 20px;
+}
+
+nav {
+    background-color: rgb(240, 240, 240);
+    width: 3vw;
+    height: 90vh;
+    float: left;
+    z-index: -1;
+}
+nav i{
+    padding: 50% 33%;
+
+}
+
+.activeSong {
+    background-color: rgb(67, 104, 155);
+    float: left;
+    width: 100vw;
+    height: 20vh;
+    padding: 10px;
+    z-index: 100;
+}
+.songButton{
+    display: flex;
+    flex-direction: row;
+}
+
+.songImage {
+    width: 20%;
+    float: left;
+}
+
+table {
+    width:90vw;
+    border-collapse: collapse;
+    text-align: left;
+    border: none;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 4px;
+    border: none;
+  }
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+    width: 100%;
+    border: none;
+  }
+.marker {
+    width: 10vw;
+    height: 20px;
+    margin: 10px auto;
+    border: 1px solid black;
+  }
+h6{
+    color: blue;
+    display: inline;
+}
+h6.songName{
+    color: rgb(249, 249, 249);
+    float: left;
+}
