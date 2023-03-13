@@ -113,3 +113,8 @@ h6.songName{
     color: rgb(249, 249, 249);
     float: left;
 }
+
+.songDetails{
+    position: relative;
+    left:-9%
+}
