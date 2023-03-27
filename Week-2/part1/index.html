@@ -38,14 +38,39 @@
                         <input type="radio" name="title" id="Miss" vlaue="Miss">
                         <label for="Miss">Mr.</label>
                     </article>
-                        <article><label for="firstname">First Name: </label><input type="text" name="firstname" id="firstname"></article>
-                        <article><label for="lastname">Last Name: </label><input type="text" name="lastname" id="lastname"></article>
-                        <article><label for="email">Email: </label><input type="email" name="email" id="email"></article>
-                        <article><label for="phone-number">phonenumber: </label><input type="number" name="lastname" id="lastname"></article>
-                        <article><label for="password">Password: </label><input type="password" name="password" id="password"></article>
-                        <article><label for="conf_password">Confirm Password:  </label><input type="password" name="conf_password" id="conf_password"></article>
-                        <article><label for="country">Last Name: </label><input type="country" name="country" id="country"></article>
-                        <article><input type="checkbox" name="country" id="country"><label for="terms_and_conditions">  I agree to the <a href="#">terms and conditions.</a></label></article>
+                        <article><label for="firstname">First Name: </label>
+                            <input type="text" name="firstname" id="firstname" required 
+                                minlength="4" maxlength="20" size="20"></article>
+
+                        <article><label for="lastname">Last Name: </label>
+                            <input type="text" name="lastname" id="lastname" required 
+                            minlength="4" maxlenght="20" size="20" ></article>
+
+                        <article><label for="email">Email: </label>
+                            <input type="email" name="email" id="email" rewuired></article>
+
+                        <article><label for="phone-number">phonenumber: </label>
+                            <input type="number" name="phone-number" id="phone-number" required ></article>
+
+                        <article><label for="password">Password: </label>
+                            <input type="password" name="password" id="password" required></article>
+
+                        <article><label for="conf_password">Confirm Password:  </label>
+                            <input type="password" name="conf_password" id="conf_password" required></article>
+
+                        <article><label for="country">Country: </label>
+                            <input list="country" name="country" id="country" >
+                            <datalist id="country">
+                                <option vlaue="india"></option>
+                                <option value="Bhutan"></option>
+                                <option value="Canada"></option>
+                                <option value="France"></option>
+                                <option value="Germany"></option>
+                            </datalist>
+                        </article>
+
+                        <article><input type="checkbox" name="country" id="country">
+                            <label for="terms_and_conditions">  I agree to the <a href="#">terms and conditions.</a></label></article>
                     </fieldset>
                         <input type="button" id="button" name="signup" value="Sign up">
                 
