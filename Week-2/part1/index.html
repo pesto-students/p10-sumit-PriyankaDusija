@@ -25,9 +25,10 @@
             <br/>
             <br/>
             <div class="page__form">
-                <form methord="post" action="#">
+                <form method="post" >
                     <h2>User's Data:</h2>
-                    <br/><br/>
+                    <spam class="visually-hidden">Enter User Data</spam>
+                    <br/>
                     <fieldset>
                     <article>
                         <label>Title:&nbsp;&nbsp;</label>
@@ -39,8 +40,9 @@
                         <label for="Miss">Mr.</label>
                     </article>
                         <article><label for="firstname">First Name: </label>
-                            <input type="text" name="firstname" id="firstname" required 
-                                minlength="4" maxlength="20" size="20"></article>
+                            <input type="text" name="firstname" id="firstname"  
+                                minlength="4" maxlength="20" size="20" required />
+                            </article>
 
                         <article><label for="lastname">Last Name: </label>
                             <input type="text" name="lastname" id="lastname" required 
@@ -56,26 +58,27 @@
                             <input type="password" name="password" id="password" required></article>
 
                         <article><label for="conf_password">Confirm Password:  </label>
-                            <input type="password" name="conf_password" id="conf_password" required></article>
+                            <input type="password" name="conf_password" id="conf_password" required
+                            title="Must contain atleast one number, one uppercase and one lowercase letter, and at least 8 or more characters"></article>
 
                         <article><label for="country">Country: </label>
-                            <input list="country" name="country" id="country" >
+                            <input list="country" name="country" id="countryList" >
                             <datalist id="country">
-                                <option vlaue="india"></option>
-                                <option value="Bhutan"></option>
-                                <option value="Canada"></option>
-                                <option value="France"></option>
-                                <option value="Germany"></option>
+                                <option vlaue="India">India</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Canada">Canada</option>
+                                <option value="France">France</option>
+                                <option value="Germany">Germany</option>
                             </datalist>
                         </article>
 
-                        <article><input type="checkbox" name="country" id="country">
+                        <article><input type="checkbox" name="terms_and_conditions" id="terms_and_conditions" required>
                             <label for="terms_and_conditions">  I agree to the <a href="#">terms and conditions.</a></label></article>
-                    </fieldset>
-                        <input type="button" id="button" name="signup" value="Sign up">
+                        </fieldset>
+                        <input type="submit" id="button" name="signup" value="Sign up">
                 
                 </form>
-
+                <br/><br/>
             </div>
         </div>
     </main>
