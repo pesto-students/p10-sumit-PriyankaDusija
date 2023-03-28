@@ -2,3 +2,29 @@ section {
     width: 600px;
     height:600px
 }
+
+div {
+    width: 100px;
+    height: 100px;
+}
+
+.flex-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.box1 {
+    background-color: red;
+}
+.box2 {
+    background-color: yellow;
+    display: flex;
+}
+.box3 {
+    background-color: blue;
+}
+
+.box4 {
+    background-color: green;
+}
