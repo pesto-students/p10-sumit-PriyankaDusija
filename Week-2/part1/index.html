@@ -55,10 +55,11 @@
                             <input type="number" name="phone-number" id="phone-number" required ></article>
 
                         <article><label for="password">Password: </label>
-                            <input type="password" name="password" id="password" required></article>
+                            <input type="password" name="password" id="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain atleast one number, one uppercase and one lowercase letter, and at least 8 or more characters"></article>
 
                         <article><label for="conf_password">Confirm Password:  </label>
-                            <input type="password" name="conf_password" id="conf_password" required
+                            <input type="password" name="conf_password" id="conf_password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                             title="Must contain atleast one number, one uppercase and one lowercase letter, and at least 8 or more characters"></article>
 
                         <article><label for="country">Country: </label>
